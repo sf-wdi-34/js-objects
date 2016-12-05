@@ -222,7 +222,12 @@ var data = {
   </p>
 </details>
 
-What data type are the elements within `students`?
+<details>
+  <summary>What data type are the elements within `students`?</summary>
+  <p>
+    They are objects!
+  </p>
+</details>  
 
 <details>
   <summary>What data type are the elements within `students`?</summary>
@@ -244,12 +249,14 @@ How would you access the `students` attribute of the `data` object?
   </p>
 </details>
 
+
+
 To access an array within an object,  the method is similar to accessing any other property.  The property `students` is an array of Objects.  To access that array and assign it to a variable, we simply perform the following:
 
  ```javascript
  var studentArray = data.students; //students
  ```
-The `data.students` array is now accessible by using `studentArray` instead.
+The `data.students` array is now accessible by using `studentArray` instead. We can access the first array element using bracket notation:  `studentArray[0]` or `data.students[0]`.
 
 
 <details>
@@ -288,7 +295,8 @@ You can see that this is a HUGE object with tons of data. It is the result of se
 
 To make this all a bit less overwhelming, download the [JSON viewer Chrome plugin](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh), which will help you collapse and expand sections of the data as needed.
 
-![image](https://cloud.githubusercontent.com/assets/6520345/17868426/b8f5dc98-6863-11e6-989f-6b31d7a922d1.png)
+![image](https://cloud.githubusercontent.com/assets/6520345/20900116/f2c101c0-bae1-11e6-80a7-d654c2cde2dd.png)
+
 
 <details>
   <summary>Challenge: Assuming the whole JSON is named `data`, access the URL of the first image from the first search result from this piece of JSON.</summary>
