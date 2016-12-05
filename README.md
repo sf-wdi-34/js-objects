@@ -65,7 +65,7 @@ In the line below, `wheels` is a **key** and `4` is its **value**. What are the 
 wheels: 4;
 ```
 
-Notice that **keys** are short, descriptive names just like variable names. key-value pairs are essentially just variable names and stored values. An object groups the information of many key-value pairs into a meaningful collection.
+Notice that **keys** are short, descriptive names just like variable names. Key-value pairs are essentially just variable names (keys) and their associated stored values. An object groups the information of many key-value pairs into a meaningful collection.
 
 Notice that in our example, **values** are numbers, booleans, strings, and an array. These are all **attributes** (aka **properties**) of the object. They are the information that describes this object.
 
@@ -122,12 +122,14 @@ car['damage'] = ['chipped windshield','dented back left bumper', 'passenger wind
 Soon we'll learn other ways to build objects using special functions, called **constructors**, that build objects from an existing template.
 
 ## Changing an Object's properties
-I don't know about you, but I generally like my cars yellow. I would also prefer a car with a top speed greater than 110!  Can we change our `car` object to better reflect my preferences? You bet!
+I don't know about you, but I generally like my cars yellow. I would also prefer a car with a top speed greater than 110!  Can we change our `car` object to better reflect my preferences? Absolutely!
 
 ``` javascript
 car.color = 'yellow';
 car.topSpeed = 210;
 ```
+
+We just use the `=` to assign new values
 
 ![image](https://cloud.githubusercontent.com/assets/6520345/17868818/46b3cce2-6865-11e6-8bb4-94ebc63ceddf.png)
 
@@ -193,23 +195,20 @@ var data = {
 	school: "General Assembly",
 	city: "San Francisco",
 	course: "Web Development Immersive",
-	course_id: "WDI31",
-	classroom: "4",
+	course_id: "WDI34",
+	classroom: "7",
 	students: [{
 		id: 124140,
-		lastName: "Baig",
-		firstName: "Abbas",
-		gitHubUsername: "abbasbaigali"
+		lastName: "Silva",
+		firstName: "Greice"
 	}, {
 		id: 421124,
-		lastName: "Bak",
-		firstName: "Sera",
-		gitHubUsername: "serabakpak"
+		lastName: "Arellano",
+		firstName: "Ricardo"
 	}, {
 		id: 824544,
-		lastName: "Brown",
-		firstName: "Alicia",
-		gitHubUsername: "cabrown91"
+		lastName: "Cusimano",
+		firstName: "Zach"
 	}]
 }
 
@@ -254,7 +253,7 @@ The `data.students` array is now accessible by using `studentArray` instead.
 
 
 <details>
-  <summary>How would you access Alicia's data from within the `data` object?</summary>
+  <summary>How would you access Zach's data from within the `data` object?</summary>
   <p>
   ```javascript
     data.students[2]
@@ -263,20 +262,20 @@ The `data.students` array is now accessible by using `studentArray` instead.
 </details>
 
 <details>
-  <summary>How would you access Sera's GitHub username?</summary>
+  <summary>How would you access Ricardo's student id?</summary>
   <p>
   ```javascript
-    data.students[1].gitHubUsername;
+    data.students[1].id;
   ```
   </p>
 </details>
 
 
 <details>
-  <summary>How would you access Abbas's student id?</summary>
+  <summary>How would you access Greice's last name?</summary>
   <p>
   ```javascript
-    data.students[0].id;
+    data.students[0].lastName;
   ```
   </p>
 </details>
@@ -287,7 +286,7 @@ JSON stands for **JavaScript Object Notation**. It is a standard for communicati
 
 You can see that this is a HUGE object with tons of data. It is the result of searching Spotify's albums for the string "demon days".
 
-To make this all a bit less overwhelming, download the [JSONview Chrome plugin](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en), which will help you collapse and expand sections of the data as needed.
+To make this all a bit less overwhelming, download the [JSON viewer Chrome plugin](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh), which will help you collapse and expand sections of the data as needed.
 
 ![image](https://cloud.githubusercontent.com/assets/6520345/17868426/b8f5dc98-6863-11e6-989f-6b31d7a922d1.png)
 
@@ -304,7 +303,7 @@ To make this all a bit less overwhelming, download the [JSONview Chrome plugin](
 #### Note: Arrays are special objects! An array is an object with numerical keys.
 
 ## Independent Practice
-Refine the skills covered in this workshop with this [training](https://github.com/sf-wdi-31/js-objects-training).
+Refine the skills covered in this workshop with this [training](https://github.com/sf-wdi-34/js-objects-training).
 
 ## Closing Thoughts
 - We're going to be using objects heavily this week in inspecting JSON. If accessing specific properties of an object is feeling challenging, practice in the terminal using node's REPL. Create an object and then try to access a specific property.
